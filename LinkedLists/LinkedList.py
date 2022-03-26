@@ -139,3 +139,8 @@ linkedlist.insert(Node(3))
 linkedlist.delete(Node(3))
 print(linkedlist)
 assert str(linkedlist) == '3 -> 4 -> 3 -> 3 -> None'
+
+# Testing negative numbers
+linkedlist.insert(Node(-1))
+print(linkedlist)
+assert str(linkedlist) == '-1 -> 3 -> 4 -> 3 -> 3 -> None'
