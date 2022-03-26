@@ -30,12 +30,14 @@ class LinkedList:
 
     def __init__(self) -> None:
         """ Initializes an empty LinkedList
+
         Args:
             self(object): Current instance of class."""
         self.head = None
 
     def insert(self, node) -> None:
         """ Inserts node into the head of the Linked list
+
         Args:
             self(object) : Current instance of class.
             node(object) : Node to be inserted into LinkedList.
@@ -47,6 +49,7 @@ class LinkedList:
 
     def search(self, target) -> list:
         """ Searches LinkedList for a Node and returns pointers to this element.
+
         Args:
             self(object): Current instance of class.
             target(object): Node to be searched for in LinkedList
@@ -113,3 +116,12 @@ assert str(linkedlist) == 'None'
 linkedlist.delete(2)
 print(linkedlist)
 assert str(linkedlist) == 'None'
+
+# Testing two head elements that are the same.
+linkedlist.insert(Node(3))
+linkedlist.insert(Node(3))
+linkedlist.insert(Node(4))
+linkedlist.insert(Node(3))
+linkedlist.delete(Node(3))
+print(linkedlist)
+assert str(linkedlist) == '3 -> 4 -> 3 -> 3 -> None'
