@@ -2,6 +2,13 @@ class Node:
     """ Python3 simple implementation of Node for a LL"""
 
     def __str__(self) -> str:
+        """ Returns the string representation of Node.
+
+        Args:
+            self(object): The current instance of the class.
+        Returns:
+            string: The string representation of Node.
+        """
         return str(self.data)
 
     def __init__(self, data=None) -> None:
@@ -18,6 +25,13 @@ class LinkedList:
     """ Python3 simple implementation of a linkedlist"""
 
     def __str__(self) -> str:
+        """ Returns string represenation of linkedlist.
+
+        Args: 
+            self(object): Current instance of the class.
+        Returns:
+            string: LinkedList in a string representation.
+        """
         string = ''
         node = self.head
         while True:
